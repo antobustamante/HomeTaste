@@ -1,0 +1,106 @@
+/*Variables*/
+body {
+  background-color: #e5e5e5;
+  margin: 0px; }
+
+nav {
+  font-size: 2.5vh;
+  font-family: "Handlee";
+  background-color: #F79D65;
+  box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3); }
+
+li {
+  padding: 0px 30px 0px 0px; }
+
+.dropdown-menu, .dropdown-item {
+  background-color: #F79D65 !important;
+  align-items: flex-start; }
+
+h1 {
+  color: antiquewhite !important;
+  font-family: "Dancing Script";
+  font-size: 5vh !important;
+  justify-self: start; }
+
+.titulo {
+  color: #F79D65;
+  font-family: "Staatliches";
+  margin: 5vh !important;
+  font-size: 5vh; }
+
+.titulo--chico, .titulo--chico--otraletra {
+  color: #c07549;
+  font-size: 3.5vh; }
+
+.titulo--chico--otraletra {
+  font-family: "Handlee"; }
+
+div img {
+  height: auto;
+  width: 80%;
+  display: block;
+  margin: auto; }
+
+div img:hover {
+  height: auto;
+  width: 100%;
+  transition: height 2s, width 2s; }
+
+a {
+  color: white !important;
+  font-family: "Handlee";
+  text-decoration: none !important; }
+
+.texto, fieldset {
+  color: #c07549 !important;
+  font-family: "Piazzolla";
+  font-size: 2.3vh; }
+
+input, select {
+  font-family: "Piazzolla"; }
+
+footer {
+  background-color: black;
+  color: white;
+  font-family: "Piazzolla";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin-top: 1vh; }
+  footer .footer__logo {
+    font-family: "Dancing Script";
+    font-size: 3vh;
+    justify-self: start;
+    align-content: center;
+    margin-left: 1vh; }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vh;
+    list-style: none; }
+
+.principal {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../img/comidakb.jpg);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.5); }
+
+.principal__texto {
+  color: white;
+  font-family: "Handlee";
+  font-size: 10vh; }
+
+.card-text {
+  font-family: "Piazzolla";
+  color: #c07549; }
+
+.card-title {
+  font-family: "Handlee";
+  color: #F79D65;
+  font-weight: bold; }

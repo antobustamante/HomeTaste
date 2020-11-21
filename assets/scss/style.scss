@@ -1,0 +1,141 @@
+/*Variables*/
+$main-color: #F79D65;
+$text-color: rgb(192, 117, 73);
+$subtitle-color: rgb(197, 31, 67);
+$logo-font: "Dancing Script";
+$text-font: "Piazzolla";
+$title-font: "Staatliches";
+$nav-font: "Handlee";
+$font-sizes: ('xs': 1.5vh, 'small': 2.5vh, 'medium': 3.5vh, 'large': 5vh, 'xl': 10vh);
+
+body{
+    background-color: #e5e5e5;
+    margin: 0px;
+}
+
+nav{
+    font-size: map-get($map: $font-sizes, $key: small);
+    font-family: $nav-font;
+    background-color: $main-color;
+    box-shadow: 0px 0px 20px rgba(50, 50, 50, 0.3);
+}
+
+li{
+    padding: 0px 30px 0px 0px;
+}
+
+.dropdown-menu, .dropdown-item{
+    background-color: $main-color !important;
+    align-items: flex-start;
+}
+
+h1{
+    color: antiquewhite !important;
+    font-family: $logo-font;
+    font-size: map-get($map: $font-sizes, $key: large) !important;
+    justify-self: start;
+}
+
+.titulo{
+    color: $main-color;
+    font-family: $title-font;
+    margin: 5vh !important;
+    font-size: map-get($map: $font-sizes, $key: large);
+}
+
+.titulo--chico{
+    color: $text-color;
+    font-size: map-get($map: $font-sizes, $key: medium);
+}
+
+.titulo--chico--otraletra{
+    @extend .titulo--chico;
+    font-family: $nav-font;
+}
+
+div img{
+    height: auto;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+div img:hover{
+    height: auto;
+    width: 100%;
+    transition: height 2s, width 2s;
+}
+
+a{
+    color: white !important;
+    font-family: $nav-font;
+    text-decoration: none !important;
+}
+
+.texto, fieldset{
+    color: $text-color !important;
+    font-family: $text-font;
+    font-size: 2.3vh;
+}
+
+input, select{
+    font-family: $text-font;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: $text-font;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-top: 1vh;
+
+    .footer__logo{
+        font-family: $logo-font;
+        font-size: 3vh;
+        justify-self: start;
+        align-content: center;
+        margin-left: 1vh;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: map-get($map: $font-sizes, $key: xs);
+        list-style: none;
+    }
+}
+
+.principal{
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../img/comidakb.jpg);
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 5px rgba(50, 50, 50, 0.5);
+}
+
+.principal__texto{
+    color: white;
+    font-family: $nav-font;
+    font-size: map-get($map: $font-sizes, $key: xl);
+}
+
+@mixin cards ($font-family, $color) {
+    font-family: $font-family;
+    color: $color;
+}
+
+.card-text{
+    @include cards ($text-font, $text-color);
+}
+
+.card-title{
+    @include cards ($nav-font, $main-color);
+    font-weight: bold;
+}
