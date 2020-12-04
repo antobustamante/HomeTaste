@@ -6,7 +6,7 @@ $logo-font: "Dancing Script";
 $text-font: "Piazzolla";
 $title-font: "Staatliches";
 $nav-font: "Handlee";
-$font-sizes: ('xs': 1.5vh, 'small': 2.5vh, 'medium': 3.5vh, 'large': 5vh, 'xl': 10vh);
+$font-sizes: ('xs': 1.5vh, 'small': 2.5vh, 'medium': 3.5vh, 'large': 5vh, 'xl': 5.5vw);
 
 body{
     background-color: #e5e5e5;
@@ -29,7 +29,7 @@ li{
     align-items: flex-start;
 }
 
-h1{
+.navlogo{
     color: antiquewhite !important;
     font-family: $logo-font;
     font-size: map-get($map: $font-sizes, $key: large) !important;
@@ -138,4 +138,9 @@ footer{
 .card-title{
     @include cards ($nav-font, $main-color);
     font-weight: bold;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
 }
