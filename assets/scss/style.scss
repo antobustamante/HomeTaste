@@ -9,7 +9,7 @@ $nav-font: "Handlee";
 $font-sizes: ('xs': 1.5vh, 'small': 2.5vh, 'medium': 3.5vh, 'large': 5vh, 'xl': 5.5vw);
 
 body{
-    background-color: #e5e5e5;
+    background-color: #fce5cd;
     margin: 0px;
 }
 
@@ -98,6 +98,7 @@ footer{
         justify-self: start;
         align-content: center;
         margin-left: 1vh;
+        padding-left: 1vh;
     }
 
     ul{
@@ -106,6 +107,7 @@ footer{
         align-items: center;
         font-size: map-get($map: $font-sizes, $key: xs);
         list-style: none;
+        padding-top: 1vh;
     }
 }
 
